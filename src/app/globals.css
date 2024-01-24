@@ -2,4 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.clip-path{
+    clip-path:polygon(36% 0, 100% 0, 100% 100%, 0% 100%)
+}
+/* 55% 0, 100% 0, 100% 100%, 0% 100% */
+/* 10% 0, 100% 0%, 100% 100%, 0 100% */
+.background-img{
+    background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80)
+    /* background-image:url(../../public/homebanner-removebg-preview.png) ;
+    background-repeat: no-repeat; */
+  
+}
