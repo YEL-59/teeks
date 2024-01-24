@@ -1,81 +1,93 @@
 import Navbar from "./component/navbar/navbar";
 import Image from "next/image";
 import homebg1 from "/public/homebanner.png";
+import "./globals.css";
 export default function Home() {
   return (
     <>
       <div className="p-2">
         <Navbar />
       </div>
-      <section className="h-full w-full place-items-center bg-[#ffffff]   relative py-14 lg:mb-20 ">
-        <div className="container mx-auto grid items-center lg:grid-cols-2">
-          <div className="text-center lg:text-left pt-10">
-            <div className="mb-8 inline-flex items-center">
-              <p className="block antialiased font-sans text-sm leading-normal mr-3 py-0.5 px-3 font-bold text-dark uppercase border-r border-dark text-[#9fa8ab]">
-                New
-              </p>
-              <p className="antialiased  text-sm  leading-normal text-inherit flex items-center font-bold uppercase">
-                want to find tutors.
-              </p>
+
+      <div class="w-full">
+        <nav class="bg-white shadow-lg">
+          <div class="md:flex items-center justify-between py-2 px-8 md:px-12">
+            <div class="flex justify-between items-center">
+              <div class="text-2xl font-bold text-gray-800 md:text-3xl">
+                <a href="#">Brand</a>
+              </div>
+              <div class="md:hidden">
+                <button
+                  type="button"
+                  class="block text-gray-800 hover:text-gray-700 focus:text-gray-700 focus:outline-none"
+                >
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                    <path
+                      class="hidden"
+                      d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"
+                    />
+                    <path d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                  </svg>
+                </button>
+              </div>
             </div>
-            <h1 className="block antialiased tracking-normal text-[#2c6777]  text-5xl text-blue-gray-900 mb-8 lg:mr-32 leading-tight font-black">
-              We help you find{" "}
-              <span className="text-[#2c6777]">and manage Best tutors.</span>
-            </h1>
-            <p className="block antialiased  text-xl font-normal leading-relaxed text-blue-gray-900 lg:pr-32">
-              Skilled and Emotionally Intelligent Educators that will make
-              learning exciting and engaging.
-            </p>
-            <div className="mt-2 ">
-              <form className="max-w-xl mt-10 p-2 md:p-0 lg:p-0">
-                <label className=" text-sm font-medium text-gray-900 sr-only ">
-                  Search
-                </label>
-                <div className="relative">
-                  <div className="absolute inset-y-0 left-0 flex items-center pl-3 mt-1 pointer-events-none">
-                    <svg
-                      className="w-4 h-4 text-gray-500 "
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                      />
-                    </svg>
-                  </div>
-                  <input
-                    type="search"
-                    id="default-search"
-                    className="block w-full p-3 pl-10 text-sm text-gray-900 border border-gray-300 rounded-full bg-white focus:ring-blue-500 focus:border-blue-500"
-                    placeholder="Search tutor,subject..."
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="text-white absolute right-2 bottom-[5px] bg-[#2c6777]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 "
-                  >
-                    Search
-                  </button>
-                </div>
-              </form>
+            <div class="flex flex-col md:flex-row hidden md:block -mx-2">
+              <a
+                href="#"
+                class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
+              >
+                Home
+              </a>
+              <a
+                href="#"
+                class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
+              >
+                About
+              </a>
+              <a
+                href="#"
+                class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
+              >
+                Contact
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div class="flex bg-white h-[600px]">
+          <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
+            <div>
+              <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl">
+                Build Your New <span class="text-indigo-600">Idea</span>
+              </h2>
+              <p class="mt-2 text-sm text-gray-500 md:text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Blanditiis commodi cum cupiditate ducimus, fugit harum id
+                necessitatibus odio quam quasi, quibusdam rem tempora
+                voluptates. Cumque debitis dignissimos id quam vel!
+              </p>
+              <div class="flex justify-center lg:justify-start mt-6">
+                <a
+                  class="px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800"
+                  href="#"
+                >
+                  Get Started
+                </a>
+                <a
+                  class="mx-4 px-4 py-3 bg-gray-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400"
+                  href="#"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hidden lg:block lg:w-1/2 clip-path">
+            <div class="h-full object-cover background-img">
+              <div class="h-full bg-[#082808] opacity-55"></div>
             </div>
           </div>
         </div>
-
-        <div className="hidden lg:flex">
-          <Image
-            src={homebg1}
-            alt="components"
-            className="absolute h-full top-0 right-0  "
-          />
-        </div>
-      </section>
+      </div>
     </>
   );
 }
